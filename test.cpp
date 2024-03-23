@@ -1,18 +1,12 @@
 #include <iostream>
-
+#include "test.h"
 using namespace std;
 
-struct test
-{
-	string name;
-	int age;
 
-
-};
 
 int main()
 {
-	test p1;
+	Person p1;
 	p1.name="jo";
 	p1.age=0;
 	cout<< p1.name<< endl;

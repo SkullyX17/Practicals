@@ -1,25 +1,17 @@
 #include <iostream>
-#ifndef Person.h
-#define Person.h
+#include "Person.h"
 using namespace std;
-
-struct Person {
-    string name;
-    int age;
-};
-
-#endif
-
 
 Person* createPersonArray(int n)
 {
-	Person *personarray[n];
+	Person* res = new Person[n];    // how to put data on the heap to use later if left on the stack it'll get deleted
 	for(int i=0; i<n; i++)
 	{
-		personarray[i].name = "john";
-		personarray[i].age = 0;
+		res[i].name = "John Doe";
+		res[i].age = 0;
+	//cout<<res[i].name<<"--"<<res[i].age<<endl;
 	}
 
 
-return personarray
+return res;
 }
