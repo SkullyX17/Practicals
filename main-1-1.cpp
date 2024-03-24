@@ -11,10 +11,10 @@ ptr = createPersonArray(n);
 
 	for(int i=0; i<n; i++)
 	{
-		cout<<(ptr+i)->name<<"--"<<(ptr+i)->age<<endl;
+		cout<<(ptr+i)->name<<" "<<(ptr+i)->age<<endl;
 	}
 
-//delete res;
+delete ptr;
 return 0;
 
 }
