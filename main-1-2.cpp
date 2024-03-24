@@ -9,17 +9,18 @@ int main(){
 
 
 int n=2;
-Person ptr[n];
+PersonList ptr;
+Person *temp;
 
 ptr = createPersonList(n);
-
+temp=ptr.people;
 	for(int i=0; i<n; i++)
 	{
-		cout<<(ptr+i)->people<<" "<<(ptr)->numPeople<<endl;
+		cout<<temp[i].name<<endl;
 	}
+ cout<<(ptr).numPeople<<endl;
 
-
-delete ptr;
+//delete ptr;
 return 0;
 
 }
